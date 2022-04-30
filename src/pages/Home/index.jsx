@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import {useNavigate} from "react-router-dom";
+import {goToLogin} from "../../routes/coordinator";
 
 //STYLES
 import { HomeContainer } from "./styled";
 import reciclyingSVG from "../../assets/icons/recycling.svg";
-import {goToLogin} from "../../routes/coordinator";
 import {Zoom} from "@material-ui/core";
 
 export const HomePage = () => {
