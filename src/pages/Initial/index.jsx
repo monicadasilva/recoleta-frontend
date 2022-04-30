@@ -7,7 +7,7 @@ import { HomeContainer } from "./styled";
 import logo from "../../assets/icons/logo.svg";
 import {Zoom} from "@material-ui/core";
 
-export const HomePage = () => {
+export const Initial = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export const HomePage = () => {
       <Zoom in style={{transitionDelay: logo ? '1000ms' : '0ms'}}>
       <div>
         <img width={120} height={120} src={logo} alt="Reciclável" />
-        <h1> Recoleta </h1>
+        <h1> <span>Re</span>coleta </h1>
       </div>
       </Zoom>
     </HomeContainer>

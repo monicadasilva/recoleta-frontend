@@ -1,4 +1,4 @@
-export const goToHome = (navigate) => {
+export const goToInitialPage = (navigate) => {
   navigate('/')
 };
 

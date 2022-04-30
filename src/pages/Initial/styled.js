@@ -14,6 +14,9 @@ export const HomeContainer = styled.main`
         h1 {
             font-size: 3rem;
             color: var(--white-one-plus); 
+            span {
+            color:#FFF9C7 ;
+            }
         }  
     
     }
