@@ -47,8 +47,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-/* CSS RESET  FIM*/
-:root{
+/* CSS RESET  FIM*/    
+  }
+  :root{
   --primary-one:          #64FA70;
   --primary-zero:         #4FE385;
   --primary-one-plus:     #74E34F;
@@ -56,10 +57,6 @@ table {
   --secondary-one:        #D6C9FB;
   --secondary-zero:       #9E7DFA;
   --secondary-one-plus:   #68627A;
-
-  --black-one:            #4D4D4D;
-  --black-zero:           #262626;
-  --black-one-plus:       #000000;
 
   --black-one:            #4D4D4D;
   --black-zero:           #262626;
@@ -74,6 +71,6 @@ table {
   --success:              #317A37;
   --warnig:               #FEDC00;
   --info:                 #D0E2F8
-}
-    
-  }`;
+} 
+  
+`;
