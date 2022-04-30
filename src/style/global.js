@@ -46,6 +46,7 @@ table {
     border-spacing: 0;
 }
 /* CSS RESET  FIM*/
+}
 :root{
   --primary-one:          #64FA70;
   --primary-zero:         #4FE385;
@@ -73,5 +74,4 @@ table {
   --warnig:               #FEDC00;
   --info:                 #D0E2F8
 }
-    
-  }`;
+`;
