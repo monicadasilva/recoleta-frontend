@@ -4,11 +4,11 @@
       "type": "Donator",
       "properties": {
         "USER_ID": 960,
-        "NAME": "Bearbrook Skateboard Park",
-        "NAME_FR": "Planchodrome Bearbrook",
+        "NAME": "Bernado",
         "ADDRESS": "8720 Russell Road",
-        "OPEN": null,
-        "DESCRIPTION": "Flat asphalt surface, 5 components"
+        "ACTIVE": true,
+        "DESCRIPTION": "Flat asphalt surface, 5 components",
+        "TYPE": "paper"
       },
       "geometry": {
         "type": "Point",
@@ -19,11 +19,11 @@
       "type": "Donator",
       "properties": {
         "USER_ID": 1219,
-        "NAME": "Bob MacQuarrie Skateboard Park (SK8 Extreme Park)",
-        "NAME_FR": "Planchodrome Bob-MacQuarrie (Parc SK8 Extreme)",
+        "NAME": "Lucian",
         "ADDRESS": "1490 Youville Drive",
-        "OPEN": null,
-        "DESCRIPTION": "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer"
+        "ACTIVE": true,
+        "DESCRIPTION": "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer",
+        "TYPE": "paper"
       },
       "geometry": {
         "type": "Point",
@@ -34,11 +34,11 @@
       "type": "Donator",
       "properties": {
         "USER_ID": 1157,
-        "NAME": "Walter Baker Skateboard Park",
-        "NAME_FR": "Planchodrome Walter-Baker",
+        "NAME": "Mônica",
         "ADDRESS": "100 Charlie Rogers Place",
-        "OPEN": null,
-        "DESCRIPTION": "Concrete bowl, 7,000 sq ft"
+        "ACTIVE": true,
+        "DESCRIPTION": "Concrete bowl, 7,000 sq ft",
+        "TYPE": "glass"
       },
       "geometry": {
         "type": "Point",
