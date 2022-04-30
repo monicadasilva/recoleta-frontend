@@ -1,3 +1,6 @@
+import { goToHome } from "../../routes/coordinator";
+import { useNavigate } from "react-router-dom";
+
 //STYLES
 import {
   Container,
@@ -11,6 +14,7 @@ import useMobile from "../../hooks/useMobile";
 
 export const LoginPage = () => {
   const { isMobile } = useMobile();
+  const navigate = useNavigate();
 
   return (
     <Container>
@@ -43,7 +47,14 @@ export const LoginPage = () => {
           <button className="btn"> Facebook </button>
         </div>
 
-        <span> Pular essa etapa </span>
+        <span
+          onClick={() => {
+            goToHome(navigate);
+          }}
+        >
+
+          Pular essa etapa
+        </span>
 
         <p class="singup">
           Não tem uma conta? <span> Cadastre-se! </span>
