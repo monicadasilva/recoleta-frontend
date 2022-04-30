@@ -1,3 +1,10 @@
+import { Container } from './style'
 export const HomePage = () => {
-  return <h1>Página inicial</h1>;
+
+  return (
+      <Container>
+        <h1>Home Page</h1>
+      </Container>
+  );
 };
+
