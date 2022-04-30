@@ -1,3 +1,13 @@
+import { HomeContainer } from "./styled";
+import reciclyingSVG from "../../assets/icons/recycling.svg";
+
 export const HomePage = () => {
-  return <h1>Página inicial</h1>;
+  return (
+    <HomeContainer>
+      <div>
+        <img src={reciclyingSVG} alt="Reciclável" />
+        HomePage
+      </div>
+    </HomeContainer>
+  );
 };
