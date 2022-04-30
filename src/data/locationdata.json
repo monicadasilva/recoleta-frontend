@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "type": "Donator",
+      "properties": {
+        "USER_ID": 960,
+        "NAME": "Bernado",
+        "ADDRESS": "8720 Russell Road",
+        "ACTIVE": true,
+        "DESCRIPTION": "Flat asphalt surface, 5 components",
+        "TYPE": "paper"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-23.991, -46.24521]
+      }
+    },
+    {
+      "type": "Donator",
+      "properties": {
+        "USER_ID": 1219,
+        "NAME": "Lucian",
+        "ADDRESS": "1490 Youville Drive",
+        "ACTIVE": true,
+        "DESCRIPTION": "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer",
+        "TYPE": "paper"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-23.99, -46.2451]
+      }
+    },
+    {
+      "type": "Donator",
+      "properties": {
+        "USER_ID": 1157,
+        "NAME": "Mônica",
+        "ADDRESS": "100 Charlie Rogers Place",
+        "ACTIVE": true,
+        "DESCRIPTION": "Concrete bowl, 7,000 sq ft",
+        "TYPE": "glass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-23.98921, -46.24951]
+      }
+    }
+  ]
+}

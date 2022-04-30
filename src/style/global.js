@@ -60,10 +60,6 @@ table {
   --black-zero:           #262626;
   --black-one-plus:       #000000;
 
-  --black-one:            #4D4D4D;
-  --black-zero:           #262626;
-  --black-one-plus:       #000000;
-
   --white-one-negative:   #DFDFDF;
   --white-zero:           #FBFCFF;
   --white-one-plus:       #FFFFFF;
@@ -75,5 +71,4 @@ table {
   --info:                 #D0E2F8
 } 
   
-  
-  `;
+`;
