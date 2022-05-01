@@ -10,13 +10,19 @@ import { ReactComponent as Settings } from '../../assets/icons/settings.svg'
 import { ReactComponent as Verified } from '../../assets/icons/verified.svg'
 import { ReactComponent as Message } from '../../assets/icons/message.svg'
 import { Link } from 'react-router-dom'
+import { AiOutlineCloseCircle } from 'react-icons/ai'
+import { useMenu } from '../../Contexts/menu'
+
 
 export const Menu = ({ name, img, open}) => {
+    
+    const { SetMenu } = useMenu()
     return (
         <>
         {open && 
         <Container>
             <Perfil>
+                <AiOutlineCloseCircle onClick={() => SetMenu(false)}/>
                 <ContentInfo>
                     <span>
                         <p>{name}</p>
@@ -27,39 +33,39 @@ export const Menu = ({ name, img, open}) => {
             </Perfil> 
             <Main>
                 <ul>
-                    <li>
+                    <li onClick={() => SetMenu(false)}>
                         <Star/>
                         <Link to='/meu-progresso'>Meu Progresso</Link>
                     </li>
-                    <li>
+                    <li onClick={() => SetMenu(false)}>
                         <Handashake/>
                         <Link to='/minhas-doações'>Minhas doações</Link>
                     </li>
-                    <li>
+                    <li onClick={() => SetMenu(false)}>
                         <Recycling/>
                         <Link to='/coletas-realizadas'>Coletas Realizadas</Link>
                     </li>
-                    <li>
+                    <li onClick={() => SetMenu(false)}>
                         <Message/>
                         <Link to='/mensagens'>Mensagens</Link>
                     </li>
-                    <li>
+                    <li onClick={() => SetMenu(false)}>
                         <PinDrop/>
                         <Link to='/pontos-de-coletas'>Pontos de coletas</Link>
                     </li>
-                    <li>
+                    <li onClick={() => SetMenu(false)}>
                         <Group/>
                         <Link to='/covite-amigos'>Convide Amigos</Link>
                     </li>
-                    <li>    
+                    <li onClick={() => SetMenu(false)}>    
                         <Verified/>
                         <Link to='/central-de-segurança'>Central de segurança</Link>
                     </li>
-                    <li>
+                    <li onClick={() => SetMenu(false)}>
                         <Settings/>
                         <Link to='/configurações'>Configurações</Link>
                     </li>
-                    <li>
+                    <li onClick={() => SetMenu(false)}>
                         <Info/>
                         <Link to='/sobre'>Sobre</Link>
                     </li>

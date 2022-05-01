@@ -8,24 +8,22 @@ import { ReactComponent as Notf } from "../../assets/icons/notification.svg";
 import React from "react";
 import { MenuDown } from "../../components/MenuDown";
 
+import { useMenu } from '../../Contexts/menu'
+import { MenuFloating } from '../../components/MenuFloating'
+
 export const Collect = () => {
   const [opens, setOpen] = React.useState(false);
-  console.log(opens);
+  const { openMenu } = useMenu()
   return (
     <>
       <MenuDown />
       <span onClick={() => setOpen(false)}>
         <Maps MaterialType={"paper"} />
       </span>
-      <Menu name={"monica"} img={Person} open={opens} />
+      <Menu name={"monica"} img={Person} open={openMenu} />
 
       <Headers>
-        <span onClick={() => setOpen(!opens)}>
-          <MenuIcon />
-        </span>
-        <span>
-          <Notf />
-        </span>
+        <MenuFloating/>
       </Headers>
     </>
   );

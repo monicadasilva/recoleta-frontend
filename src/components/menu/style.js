@@ -41,6 +41,14 @@ export const Perfil = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  svg{
+    position: absolute;
+    top: 6px;
+    right: 7px;
+    font-size: 19px;
+    color: var(--secondary-one-plus);
+  }
 `;
 
 export const ContentInfo = styled.div`
