@@ -1,12 +1,25 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
+
+const animateMenu = keyframes`
+    0%{
+        top:800%
+    }
+    100%{
+        top:100%
+    }
+
+`
 export const Container = styled.div`
     height: 70vh;
     width: 100%;
-    bottom:0% ;
     border-radius: 8px 8px 0px 0px;
-    position: absolute;
     background: var(--white-one-plus);
+
+    position: absolute;
+    width: 100%;
+    top: 68%;
+    animation: ${animateMenu} ease 1.5s;
 `
 
 export const ContentInput = styled.div`
@@ -54,16 +67,19 @@ export const ContentTypesCollect = styled.div`
 
 
 export const Main = styled.main`
+    background:var(--white-one-negative) ;
     overflow: auto;
     height: 265px;
-    `
+
+`
 
 export const Footer = styled.div`
+    background: var(--white-one-negative);
     &:hover{
         background:     #ece6e6;
     }
     height:72px ;
-    border-top: 1px solid var(--white-one-negative);
+    border-top: 1px solid #d7d7d7;
     cursor: pointer;
     display: flex;
     align-items:center;
@@ -79,4 +95,13 @@ export const Footer = styled.div`
     svg{
         height: 24px;
     }
+`
+
+export const LineExit = styled.div`
+    width: 80px;
+    height: 5px;
+    border-radius: 2.5px;
+    background:#C4C4C4 ;
+    margin: 0 auto;
+    margin-top:8px;
 `

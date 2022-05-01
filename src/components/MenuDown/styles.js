@@ -31,4 +31,8 @@ export const Container = styled.div`
   .collect:active, .donation:active{
     color: rgba(49, 122, 55, 1);
   }
+
+  .collect, .donation{
+    cursor:pointer ;
+  }
 `;
