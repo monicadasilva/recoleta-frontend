@@ -22,10 +22,11 @@ export const SlickSliderContainer = styled.div`
     border-radius: 1rem;
 
     h2 {
-      font-size: 1rem;
+      font-size: 0.875rem;
       margin: 0 0 1rem 0;
     }
     p {
+        font-size: 0.75rem;
       &::after {
         content: ">";
         font-size: 0.75rem;
