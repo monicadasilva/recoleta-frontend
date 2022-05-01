@@ -62,10 +62,10 @@ table {
   --black-zero:           #262626;
   --black-one-plus:       #000000;
 
-  --white-one-negative:   #DFDFDF;
-  --white-zero:           #FBFCFF;
-  --white-one-plus:       #FFFFFF;
-  --white-two-plus:       #F4F4F4;
+  --white-one-negative:   #FBFCFF;
+  --white-zero:           #FFFFFF;
+  --white-one-plus:       #F4F4F4;
+  --white-two-plus:       #DFDFDF;
 
   --error:                #FF1A25;
   --success:              #317A37;
