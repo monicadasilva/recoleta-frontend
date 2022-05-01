@@ -94,6 +94,7 @@ export const Maps = ({ MaterialType }) => {
                       <h2>{activeItem.properties.NAME}</h2>
                       <p>{activeItem.properties.DESCRIPTION}</p>
                       <h4>{activeItem.properties.ADDRESS}</h4>
+                      <a href="/">info...</a>
                     </div>
                   </Popup>
                 )}

@@ -19,7 +19,7 @@ export const Container = styled.div`
 
   top: 0;
   left: 0;
-  z-index: 1003;
+  z-index: 211185;
 
   a {
     font-size: 12px;
@@ -42,7 +42,7 @@ export const Perfil = styled.div`
   align-items: center;
   justify-content: space-evenly;
 
-  svg{
+  svg {
     position: absolute;
     top: 6px;
     right: 7px;
