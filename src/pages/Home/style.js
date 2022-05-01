@@ -19,6 +19,7 @@ export const BottomBar = styled.div`
 `;
 
 export const BottomBarItem = styled.div`
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
