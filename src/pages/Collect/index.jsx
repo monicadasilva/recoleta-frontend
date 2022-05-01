@@ -1,6 +1,6 @@
 import { Container } from './style'
 import { MenuCollect } from '../../components/menuCollect'
-export const Collect = () => {
+export const CollectPage = () => {
     return(
         <Container>
             <MenuCollect/>
