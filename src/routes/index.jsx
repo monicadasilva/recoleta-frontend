@@ -6,6 +6,8 @@ import { Initial } from "../pages/Initial";
 import { LoginPage } from "../pages/Login";
 import { CollectPage } from "../pages/Collect";
 import { CreateDonation } from "../pages/CreateDonation";
+import { Donations } from "../pages/Mockup/MyDonantions";
+import { Messagens } from "../pages/Mockup/Messagens";
 
 export const Router = () => {
   return (
@@ -17,6 +19,8 @@ export const Router = () => {
         <Route path="/pontos-de-coletas" element={<Collect />} />
         <Route path="/coletar" element={<CollectPage />} />
         <Route path="/create-donation" element={<CreateDonation />} />
+        <Route path="/minhas-doacoes" element={<Donations />} />
+        <Route path="/mensagens" element={<Messagens />} />
       </Routes>
     </div>
   );
