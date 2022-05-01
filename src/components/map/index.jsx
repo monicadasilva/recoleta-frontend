@@ -3,7 +3,7 @@ import { Container } from "./style";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import Data from "../../data/locationdata.json";
 
-export const MapPage = ({ MatiralType }) => {
+export const Maps = ({ MaterialType }) => {
   const [activeItem, setActiveItem] = React.useState(null);
   const [filterInfo, SetFilterInfo] = React.useState([]);
 
@@ -12,10 +12,10 @@ export const MapPage = ({ MatiralType }) => {
     SetFilterInfo(data);
   };
   React.useEffect(() => {
-    if (MatiralType === "paper") {
+    if (MaterialType === "paper") {
       setType("paper");
     }
-    if (MatiralType === "glass") {
+    if (MaterialType === "glass") {
       setType("glass");
     }
   }, []);
