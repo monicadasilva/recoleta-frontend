@@ -2,11 +2,13 @@ import React from "react";
 import { Container } from "./style";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import Data from "../../data/locationdata.json";
+import { useMenu } from "../../Contexts/menu";
 
 export const Maps = ({ MaterialType }) => {
   const [activeItem, setActiveItem] = React.useState(null);
   const [filterInfo, SetFilterInfo] = React.useState([]);
   const [activePin, setActivePin] = React.useState(true);
+  const { setOpenDonorDetails, openDonorDetails } = useMenu();
 
   const setType = (material) => {
     const data = Data.users.filter((elem) => elem.properties.TYPE === material);
@@ -94,7 +96,16 @@ export const Maps = ({ MaterialType }) => {
                       <h2>{activeItem.properties.NAME}</h2>
                       <p>{activeItem.properties.DESCRIPTION}</p>
                       <h4>{activeItem.properties.ADDRESS}</h4>
+<<<<<<< HEAD
                       <a href="/">info...</a>
+=======
+                      <h4
+                        onClick={() => setOpenDonorDetails(true)}
+                        className="Details"
+                      >
+                        Mais detalhes
+                      </h4>
+>>>>>>> origin/main
                     </div>
                   </Popup>
                 )}

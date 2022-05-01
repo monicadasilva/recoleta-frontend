@@ -7,6 +7,7 @@ export const MenuProvider = ( {children }) => {
     const [ openMenu, setOpenMenu ] = useState(false)
     const [ menuDown, setMenuDown ] = useState(true)
     const [ menuCollect, setMenuCollet ] = useState(false)
+    const [openDonorDetails, setOpenDonorDetails] = useState(false)
 
     const SetMenu = (state) => {
         setOpenMenu(state);
@@ -20,7 +21,7 @@ export const MenuProvider = ( {children }) => {
         setMenuCollet(state)
     }
     return(
-        <MenuContext.Provider value={{openMenu, SetMenu, menuDown, SetMenuDown, menuCollect, SetMenuColletc}}>
+        <MenuContext.Provider value={{openMenu, SetMenu, menuDown, SetMenuDown, menuCollect, SetMenuColletc, openDonorDetails, setOpenDonorDetails}}>
             {children}
         </MenuContext.Provider>
     )
