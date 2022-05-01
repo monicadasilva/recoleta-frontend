@@ -1,10 +1,12 @@
 import { Container } from "./styles";
 import { FaRegUser } from "react-icons/fa";
+import { useMenu } from "../../Contexts/menu";
 
 export const DonorDetails = ({ visible }) => {
+  const { setOpenDonorDetails } = useMenu();
   return (
     <Container visible={visible}>
-      <div className="Up"></div>
+      <div className="Up" onClick={() => setOpenDonorDetails(false)}></div>
 
       <section className="Profile">
         <div className="Icon">
