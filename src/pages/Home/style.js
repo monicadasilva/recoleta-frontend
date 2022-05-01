@@ -31,3 +31,18 @@ export const BottomBarItem = styled.div`
     color: ${props => props.color ? "var(--success)" : "black"};
   }
 `;
+
+
+export const MenuIcon = styled.div`
+    cursor: pointer;
+    position: absolute ;
+    top: 2rem;
+    z-index: 1000;
+    left: 4rem;
+    background-color: var(--white-zero);
+    border-radius: 50%;
+
+    display: flex; 
+    padding: 0.25rem;
+    border: 1px solid var(--black-zero);
+`

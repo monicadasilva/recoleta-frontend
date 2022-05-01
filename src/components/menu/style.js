@@ -8,96 +8,91 @@ const animateModal = keyframes`
         left: 0%;
     }
 
-`
+`;
 
 export const Container = styled.div`
-    width: 60vw;
-    height:100vh;
-    background: var(--white-zero);
-    position: absolute;
-    animation: ${animateModal} ease 1s;
+  z-index: 1001;
+  top: 0;
+  width: 60vw;
+  height: 100vh;
+  background: var(--white-zero);
+  position: absolute;
+  animation: ${animateModal} ease 1s;
 
-    a{
-        font-size: 12px;
-        color: var(--black-one);
-        list-style-type: none;
-        list-style: none;
-        text-decoration: none;
+  a {
+    font-size: 12px;
+    color: var(--black-one);
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+  }
+  @media (min-width: 700px) {
+    width: 25vw;
+    a {
+      font-size: 1rem;
     }
-    @media (min-width: 700px) {
-        width: 25vw;
-        a{
-            font-size: 1rem;
-        }
-    }
-    
-`
-
+  }
+`;
 
 export const Perfil = styled.div`
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
-   
-`
-
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`;
 
 export const ContentInfo = styled.div`
-    width: 100%;
-    color: var(--black-one);
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 100%;
+  color: var(--black-one);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--secondary-one-plus);
+    padding: 5px;
+  }
+  @media (min-width: 700px) {
+    width: 25vw;
     a {
-        font-family: 'Poppins', sans-serif;
-        font-weight:300;
+      font-size: 12px;
     }
-    img{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: var(--secondary-one-plus);
-        padding: 5px;
-    }
-    @media (min-width: 700px) {
-        width: 25vw;
-        a{
-            font-size: 12px;
-        }
-    }
-`
-
+  }
+`;
 
 export const Main = styled.main`
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: 0px -2px 4px 0px #00000040;
-    padding-top: 30px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: 0px -2px 4px 0px #00000040;
+  padding-top: 30px;
 
-    svg{
-        width: 16px;
-        height:16px ;
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  ul {
+    padding-left: 1rem;
+
+    li {
+      cursor: pointer;
+      padding: 1rem;
+      color: var(--black-one);
+      display: flex;
+      align-items: center;
+      a {
+        margin-left: 11px;
+      }
+
+      &:hover {
+        background: #ece6e6;
+      }
     }
-
-    ul {
-        padding-left: 1rem;
-
-        li {
-            cursor:pointer ;
-            padding: 1rem;
-            color: var(--black-one);
-            display: flex;
-            align-items: center;
-            a{
-                margin-left: 11px;
-
-            }
-
-            &:hover{
-                background:     #ece6e6;
-            }
-        }
-    }
-`
+  }
+`;

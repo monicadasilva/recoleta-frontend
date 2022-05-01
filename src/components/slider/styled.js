@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Slider from "react-slick";
+
 
 export const StyledContainer = styled.div`
   z-index: 1000;
