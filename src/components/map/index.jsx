@@ -96,16 +96,12 @@ export const Maps = ({ MaterialType }) => {
                       <h2>{activeItem.properties.NAME}</h2>
                       <p>{activeItem.properties.DESCRIPTION}</p>
                       <h4>{activeItem.properties.ADDRESS}</h4>
-<<<<<<< HEAD
-                      <a href="/">info...</a>
-=======
                       <h4
                         onClick={() => setOpenDonorDetails(true)}
                         className="Details"
                       >
                         Mais detalhes
                       </h4>
->>>>>>> origin/main
                     </div>
                   </Popup>
                 )}
