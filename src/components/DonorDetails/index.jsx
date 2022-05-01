@@ -1,9 +1,9 @@
 import { Container } from "./styles";
 import { FaRegUser } from "react-icons/fa";
 
-export const DonorDetails = () => {
+export const DonorDetails = ({ visible }) => {
   return (
-    <Container>
+    <Container visible={visible}>
       <div className="Up"></div>
 
       <section className="Profile">

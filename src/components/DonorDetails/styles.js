@@ -13,6 +13,7 @@ export const Container = styled.div`
   border-radius: 8px;
   gap: 20px;
   font-size: 12px;
+  visibility: ${({ visible }) => (visible ? "visible" : "hidden")};
 
   .Profile {
     display: flex;
@@ -86,7 +87,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    border-top: 1px solid #DFDFDF;
+    border-top: 1px solid #dfdfdf;
     gap: 10px;
     button {
       width: 146px;

@@ -11,10 +11,9 @@ import { DonorDetails } from "../../components/DonorDetails";
 
 export const Collect = () => {
   const [opens, setOpen] = React.useState(false);
-  console.log(opens);
   return (
     <>
-      <DonorDetails />
+      <DonorDetails visible={false}/>
       <MenuDown />
       <span onClick={() => setOpen(false)}>
         <Maps MaterialType={"paper"} />
