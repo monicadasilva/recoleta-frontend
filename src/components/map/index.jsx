@@ -6,6 +6,7 @@ import Data from "../../data/locationdata.json";
 export const Maps = ({ MaterialType }) => {
   const [activeItem, setActiveItem] = React.useState(null);
   const [filterInfo, SetFilterInfo] = React.useState([]);
+  const [activePin, setActivePin] = React.useState(true);
 
   const setType = (material) => {
     const data = Data.users.filter((elem) => elem.properties.TYPE === material);
@@ -16,7 +17,6 @@ export const Maps = ({ MaterialType }) => {
     loaded: false,
     coordinates: { lat: "", lng: "" },
   });
-  console.log(location.coordinates.lat);
 
   const onSuccess = (location) => {
     setLocation({
@@ -40,6 +40,9 @@ export const Maps = ({ MaterialType }) => {
     if (MaterialType === "glass") {
       setType("glass");
     }
+    if (MaterialType === "none") {
+      setActivePin(false);
+    }
     if (!("geolocation" in navigator)) {
       onError({
         code: 0,
@@ -49,16 +52,16 @@ export const Maps = ({ MaterialType }) => {
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
   }, []);
 
-  console.log(filterInfo);
   return (
     <Container>
       <MapContainer
         center={
-          location
+          location.loaded
             ? [location.coordinates.lat, location.coordinates.lng]
             : [-23.99482, -46.256901]
         }
         zoom={12}
+        zoomControl={false}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -66,7 +69,7 @@ export const Maps = ({ MaterialType }) => {
         />
         {filterInfo.map((user) => {
           return (
-            user.properties.ACTIVE && (
+            activePin && (
               <Marker
                 key={user.properties.USER_ID}
                 position={[
