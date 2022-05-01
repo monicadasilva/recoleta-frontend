@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
+
+const icons = css`
+    position: absolute ;
+    z-index: 1000;
+    background-color: var(--white-zero);
+    border-radius: 50%;
+
+    display: flex; 
+    padding: 0.25rem;
+    border: 1px solid var(--black-zero);
+`
 
 export const Container = styled.div`
   height: 100vh;
@@ -35,14 +46,17 @@ export const BottomBarItem = styled.div`
 
 export const MenuIcon = styled.div`
     cursor: pointer;
-    position: absolute ;
     top: 2rem;
-    z-index: 1000;
     left: 4rem;
-    background-color: var(--white-zero);
-    border-radius: 50%;
-
-    display: flex; 
-    padding: 0.25rem;
-    border: 1px solid var(--black-zero);
+    ${icons}
 `
+
+
+export const NotificationIcon = styled.div`
+    cursor: pointer;
+    right: 2rem;
+    top: 2rem;
+    ${icons}
+
+`
+

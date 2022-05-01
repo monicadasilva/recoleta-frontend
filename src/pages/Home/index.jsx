@@ -4,7 +4,13 @@ import { Menu } from "../../components/menu";
 import SliderHome from "../../components/slider";
 
 // STYLES
-import { Container, BottomBar, BottomBarItem, MenuIcon } from "./style";
+import {
+  Container,
+  BottomBar,
+  BottomBarItem,
+  MenuIcon,
+  NotificationIcon,
+} from "./style";
 import recycling from "../../assets/icons/recycling.svg";
 import handshake from "../../assets/icons/handshake.svg";
 import menu from "../../assets/icons/menu.svg";
@@ -22,7 +28,12 @@ export const HomePage = () => {
       >
         <img width={24} height={24} src={menu} alt="menu" />
       </MenuIcon>
-      {!!isMenuActive && <Menu name="ricardo" img={recycling} open={"yes"}/>}
+      <NotificationIcon>
+        <img width={24} height={24} src={menu} alt="menu" />
+      </NotificationIcon>
+      {!!isMenuActive && (
+        <Menu name="ricardo" img={recycling} open={isMenuActive} />
+      )}
       <SliderHome />
       <BottomBar>
         <BottomBarItem color>
