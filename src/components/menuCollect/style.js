@@ -15,11 +15,11 @@ export const Container = styled.div`
   border-radius: 8px 8px 0px 0px;
   background: var(--white-one-plus);
 
-  position: absolute;
+  position: fixed;
   width: 100%;
-  top: 110%;
+  bottom: 0;
   animation: ${animateMenu} ease 1.5s;
-  z-index: 125401;
+  z-index: 1254015555555555555555;
 `;
 
 export const ContentInput = styled.div`
