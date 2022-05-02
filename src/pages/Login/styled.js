@@ -105,7 +105,7 @@ export const LoginContainer = styled.div`
   @media (min-width: 768px) {
     height: fit-content;
     border-radius: unset;
-    padding-bottom: 3rem ;
+    padding-bottom: 3rem;
 
     margin: 0 auto;
     img {
@@ -179,17 +179,17 @@ export const DesktopHeader = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     gap: 1rem;
-    width:fit-content ;
+    width: fit-content;
 
     p {
       font-family: "Poppins", sans-serif;
       font-size: 4rem;
       color: var(--white-one-plus);
-        span {
-            color:#FFF9C7 ;
-        }
+      span {
+        color: #fff9c7;
+      }
     }
   }
 `;

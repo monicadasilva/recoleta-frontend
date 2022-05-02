@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-  display: grid;
+  display: flex;
   place-items: center;
+  width: 100%;
   height: 100vh;
-  background:var(--success) ;
+
+  position: absolute;
+  top: 0;
+  z-index: 2010;
 
   div {
     //display: flex;

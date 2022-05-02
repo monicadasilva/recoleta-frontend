@@ -7,30 +7,27 @@ import React from "react";
 import { MenuDown } from "../../components/MenuDown";
 import { DonorDetails } from "../../components/DonorDetails";
 
-import { useMenu } from '../../Contexts/menu'
-import { MenuFloating } from '../../components/MenuFloating'
-import { MenuCollect } from '../../components/menuCollect'
+import { useMenu } from "../../Contexts/menu";
+import { MenuFloating } from "../../components/MenuFloating";
+import { MenuCollect } from "../../components/menuCollect";
 
 export const Collect = () => {
   const [opens, setOpen] = React.useState(false);
-  
-  const { openMenu, menuDown, menuCollect } = useMenu()
 
+  const { openMenu, menuDown, menuCollect } = useMenu();
 
   return (
     <>
-      <DonorDetails visible={false}/>
-      <MenuDown 
-        open={menuDown}
-      />
+      <DonorDetails visible={false} />
+      <MenuDown open={menuDown} />
       <span onClick={() => setOpen(false)}>
         <Maps MaterialType={"paper"} />
       </span>
-      <Menu name={"Monica"} img={Person} open={openMenu} />
+      <Menu name={"Rafael da Silva"} img={Person} open={openMenu} />
 
       <Headers>
-        <MenuFloating/>
-        <MenuCollect open={menuCollect}/>
+        <MenuFloating />
+        <MenuCollect open={menuCollect} />
       </Headers>
     </>
   );
