@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+<h1 align=center>
+Recoleta
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
 
-## Available Scripts
+♻️ Recoleta é um projeto social para ajudar pessoas a coletarem e doar lixo reciclado, ajudando assim
+o meio ambiente e geração de renda.
 
-In the project directory, you can run:
+</h3>
 
-### `npm start`
+<hr>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Tecnologias utilizadas**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### **Website** (React)
 
-### `npm test`
+- **React Router Dom**
+- **React Icons**
+- **Axios**
+- **Leaflet**
+- **React Leaflet**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<hr>
 
-### `npm run build`
+#### **Server** (NodeJS + TypeScript)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Express**
+- **CORS**
+- **Postgres**
+- **Typescript**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<hr>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### **Utilitários**
 
-### `npm run eject`
+- Protótipo: **[Figma](https://www.figma.com/)** &rarr; **<kbd>[Protótipo (Recoleta)](https://www.figma.com/file/ph7xMWIglBnWM0pkZf30oI/Recoleta?node-id=102%3A2)</kbd>**
+- Maps: **Leaflet**
+- Editor: **Visual Studio Code**
+- Teste de API: **Insomnia + Postman**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<hr>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **COMO UTILIZAR**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Configurações Iniciais
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Primeiro, você precisa ter o <kbd>[NodeJS](https://nodejs.org/en/download/)</kbd> instalado na sua máquina.
 
-## Learn More
+Se você estiver utilizando o **Linux**, você pode optar por instalar o **Node** através do gerênciador de versões <kbd>[asdf]</kbd> para facilitar o processo de mudança da versão do **Node**, quando for necessário.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Instale as dependências contidas nos arquivos `package.json` que se encontram na raíz do repositório (para o gerenciamento de commits), no diretório do **RECOLETA-BACKEND** e no diretório do **RECOLETA-FRONTEND**. Para instalar as dependências, basta abrir o terminal no diretório e digitar o comando:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+$ npm install
 
-### Code Splitting
+# ou
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+$ yarn
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<hr>
 
-### Making a Progressive Web App
+## **Funcionalidades**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### A maioria das informações estão mocadas
 
-### Advanced Configuration
+- [x] Criação de conta
+- [x] Logar na plataforma
+- [x] Criar uma doação
+- [x] Visualizar doações criadas por outros usuários 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<hr>
 
-### Deployment
+### Utilizando o Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```sh
+# Baixe o repositório:
+$ git clone https://github.com/douglas-filipe/recoleta-backend.git
 
-### `npm run build` fails to minify
+# Abrindo o terminal no diretório do servidor:
+$ cd recoleta-backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Se quiser iniciar o docker
+
+$ docker-compose up -d
+
+# Instanciando o banco de dados:
+$ npx prisma migrate dev
+
+# Executando a aplicação em modo de desenvolvimento:
+$ yarn dev
+```
+
+### Utilizando o Website
+
+```sh
+# Baixe o repositório:
+$ git clone https://github.com/monicadasilva/recoleta-frontend.git
+
+# Abrindo o terminal no diretório do website:
+$ cd recoleta-frontend
+
+# Executando o website:
+$ yarn start
+```
+
+> Se o browser não abrir automaticamente, acesse: http://localhost:3000.
+
+Esse repositório está licenciado pela **MIT LICENSE**. Para mais informações detalhadas, leia o arquivo [LICENSE](./LICENSE) contido nesse repositório.
+
+<h3 align="center"> 🚧️ Em construção 🚧️</h3>
